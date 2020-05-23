@@ -1,0 +1,7 @@
+{
+  "name": "manga-reader",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
