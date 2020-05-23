@@ -8,6 +8,7 @@ module.exports = {
           "#root": "./src"
         }
       }
-    ]
+    ],
+    "@babel/plugin-transform-runtime"
   ]
 }

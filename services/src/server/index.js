@@ -2,14 +2,14 @@ import { ApolloServer } from 'apollo-server-express';
 import bodyParser from 'body-parser';
 import express from 'express';
 
-// import resolvers from '#root/graphql/resolvers';
+import resolvers from '#root/graphql/resolvers';
 import typeDefs from '#root/graphql/typeDefs';
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 7000;
 
 const apolloServer = new ApolloServer({
   // These will be defined for both new or existing servers
-  resolvers: {},
+  resolvers,
   typeDefs,
 });
 
