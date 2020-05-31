@@ -40,7 +40,7 @@ const transformMangas = (mangas) =>
 
 export const fetchAllMangas = (lang) => {
   const langKey = { en: 0 }[lang];
-  return axios.get(`list/${langKey}/`).then((res) => {
+  return axios.get(`/list/${langKey}`).then((res) => {
     res.data.manga = transformMangas(res.data.manga);
     return res;
   });
