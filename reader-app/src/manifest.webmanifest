@@ -1,16 +1,41 @@
 {
-    "name": "js13kGames Progressive Web App",
-    "short_name": "js13kPWA",
-    "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+    "name": "Manga Reader",
+    "short_name": "Manga Reader",
+    "start_url": "/",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34",
+    "display": "standalone",
     "icons": [
         {
-            "src": "icon/fox-icon.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "src": "https://placekitten.com/48/48"
+        },
+        {
+            "type": "image/png",
+            "sizes": "72x72",
+            "src": "https://placekitten.com/72/72"
+        },
+        {
+            "type": "image/png",
+            "sizes": "96x96",
+            "src": "https://placekitten.com/96/96"
+        },
+        {
+            "type": "image/png",
+            "sizes": "144x144",
+            "src": "https://placekitten.com/144/144"
+        },
+        {
+            "type": "image/png",
             "sizes": "192x192",
-            "type": "image/png"
+            "src": "https://placekitten.com/192/192"
+        },
+        {
+            "type": "image/png",
+            "sizes": "512x512",
+            "src": "https://placekitten.com/512/512"
         }
     ],
-    "start_url": "./index.html",
-    "display": "fullscreen",
-    "theme_color": "#B12A34",
-    "background_color": "#B12A34"
+    "prefer_related_applications": false
 }
