@@ -47,7 +47,6 @@ export const fetchAllMangas = (lang) => {
 
 export const fetchMangaInfo = ({ mangaId }) => {
   return axios.get(`/manga/${mangaId}/`).then((res) => {
-    console.log("aaa");
     res.data.chapters = transformChapters(
       res.data.chapters
     );
