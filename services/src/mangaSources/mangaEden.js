@@ -4,14 +4,13 @@ export const axios = gloabalAxios.create({
   baseURL: process.env.MANGA_EDEN_URL,
 });
 
-const transformChapters = chapters => chapters.map(
-  ([number, lastUpdated, title, id]) => ({
+const transformChapters = (chapters) =>
+  chapters.map(([number, lastUpdated, title, id]) => ({
     id,
     lastUpdated,
     number,
     title,
-  })
-);
+  }));
 
 const transformMangas = (mangas) =>
   mangas
@@ -48,7 +47,10 @@ export const fetchAllMangas = (lang) => {
 
 export const fetchMangaInfo = ({ mangaId }) => {
   return axios.get(`/manga/${mangaId}/`).then((res) => {
-    res.data.chapters = transformChapters(res.data.chapters);
+    console.log("aaa");
+    res.data.chapters = transformChapters(
+      res.data.chapters
+    );
     return res;
   });
 };
